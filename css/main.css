@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+  --themeColor: #ebab9d;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  background: #f6f6f6;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% auto 40% auto 15%;
+  grid-template-areas:
+    'header-area'
+    '.'
+    'content-area'
+    '.'
+    'action-area';
+}
+
+/* NAVBAR */
+
+header {
+  background: white;
+  grid-area: header-area;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+  align-items: center;
+}
+
+header .navbar .logo {
+  justify-self: flex-start;
+  cursor: pointer;
+}
+header .navbar nav {
+  /* height: auto; */
+  justify-self: flex-end;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  transition: all 0.25s ease 0s;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  font-weight: 400;
+
+  border-top: transparent solid 3px;
+  padding-top: 5px;
+}
+
+.nav_links li a:hover {
+  color: var(--themeColor);
+  font-weight: 600;
+
+  /* color: #FFF; */
+  /* background-color: #252525; */
+  border-top: var(--themeColor) solid 3px;
+}
+
+/* CONTENT STRUCTURE */
+
+.content {
+  /* background: gray; */
+  grid-area: content-area;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content .titles {
+  /* background: gray; */
+  flex: 1 0 0;
+  order: 1;
+}
+
+.content .titles h1 {
+  margin: 0;
+  font-size: 3.45rem;
+  font-weight: bold;
+  /* color: #000000; */
+}
+
+.content .titles h3 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+  /* color: #000000; */
+}
+
+.content .titles p {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #8d8b8b;
+}
+
+.content .design {
+  /* background: rgb(54, 54, 54); */
+  flex: 1 0 0;
+  order: 2;
+}
+
+.action-area {
+  grid-area: action-area;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* CONTENT TITLES  */
+.content .titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .titles .center-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.content .titles .center-box p {
+  padding-top: 1em;
+}
+
+/* CONTENT DESIGN  */
+.content .design {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
