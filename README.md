@@ -14,6 +14,12 @@ https://aaronlee232.github.io/ahs-scioly-website/html/index.html
 
 [Sponsors](https://aaronlee232.github.io/ahs-scioly-website/html/sponsors.html)
 
+## Tools and Languages Used
+- Prototyping/Planning: Adobe XD
+- Vector Art: Adobe XD
+- HTML
+- CSS
+- SASS
 
 ## Notes
 Javascript functionality not yet added.
